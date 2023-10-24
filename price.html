@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Thanh toán đơn hàng</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Thanh toán đơn hàng</h1>
+        <div class="customer-info">
+            <h2>Thông tin khách hàng</h2>
+            <form>
+                <label for="name">Tên khách hàng:</label>
+                <input type="text" id="name">
+                <label for="address">Địa chỉ:</label>
+                <input type="text" id="address">
+                <label for="card-number">Số thẻ tín dụng:</label>
+                <input type="text" id="card-number">
+                <label for="expiry">Ngày hết hạn:</label>
+                <input type="text" id="expiry">
+                <button id="pay-button">Thanh toán</button>
+        </div>
+    </div>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <h2>Thông tin thanh toán</h2>
+            <div class="customer-info">
+                <p>Tên khách hàng: <span id="customer-name"></span></p>
+                <p>Địa chỉ: <span id="customer-address"></span></p>
+            </div>
+        </div>
+    </div>
+
+    <script src="./assets/js/scrip.js"></script>
+</body>
+
+</html>

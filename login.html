@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookStore</title>
+    <link rel="stylesheet" href="./assets/css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="overlay"></div>
+    <div class="login-container">
+        <div>
+            <div class="logo">
+                <span><img width="100" height="100" alt="logo" src="./assets/image/PNGkhothietke.net-02706.png">BookStore</span>
+            </div>
+            <div class="register">
+                <div>Don't have an account?</div>
+                <p>Sign up to access all the features of our service. The place to shop for your books. It's free</p>
+                <div class="social">
+                    <a title="Facebook" href="" data-toggle="tooltip"><i class="fab fa-facebook-f"></i></a>
+                    <a title="Google" href="" data-toggle="tooltip"><i class="fab fa-google"></i></a>
+                    <a title="Pinterest" href="" data-toggle="tooltip"><i class="fab fa-pinterest-p"></i></a>
+                    <a title="Github" href="" data-toggle="tooltip"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="button-container">
+            <button class="button-login">Đăng nhập</button>
+            <button class="button-login">Đăng ký</button>
+            <button class="button-login">Quên mật khẩu</button>
+        </div>
+
+        <!-- <h2 class="dangnhap">Đăng nhập</h2> -->
+        <form class="login-form" id="loginForm">
+            <label class="user" for="username">Tên người dùng:</label>
+            <input id="username" required="" type="text" placeholder="Name">
+            <label class="pass" for="password">Mật khẩu:</label>
+            <input id="password" required="" type="password" placeholder="password">
+            <button onclick="login(event)" e="submit" typ="">Đăng nhập</button>
+        </form>
+
+        <!-- <h2 class="dangky">Đăng ký</h2> -->
+        <form class="register-form" id="registerForm">
+            <label for="registerUsername">Tên người dùng:</label>
+            <input id="registerUsername" required="" type="text" placeholder="Name">
+            <label for="registerPassword">Mật khẩu:</label>
+            <input id="registerPassword" required="" type="password" placeholder="password">
+            <label for="confirmPassword">Xác nhận mật khẩu:</label>
+            <input id="confirmPassword" required="" type="password" placeholder="password">
+            <button onclick="register(event)" type="submit" value="SEND">Đăng ký</button>
+        </form>
+        <button class="forgotpassword--button" id="forgotPasswordButton" type="submit">Quên mật khẩu</button>
+
+        <h3>Local Storage</h3>
+        <table id="localStorageTable">
+            <thead>
+                <tr>
+                    <th>account</th>
+                    <th>password</th>
+                </tr>
+            </thead>
+            <tbody></tbody>
+        </table>
+
+        <script src="save.js"></script>
+        <!-- <a href="/lc.html">web</a> -->
+
+
+
+    </div>
+</body>
+
+</html>
