@@ -1,0 +1,9 @@
+body {
+    background-color: rgb(222, 221, 221);
+}
+
+h1 {
+    font-size: 3em;
+    margin-left: 100px;
+    color: rgb(9, 6, 6);
+}
